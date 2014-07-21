@@ -73,7 +73,6 @@ html, body {
 
 .intro-text {
   margin-left: 3em;
-  width: 70%;
   text-align: justify;
   font-size: 20px;
 }
@@ -96,6 +95,11 @@ html, body {
   clear: both;
   margin-top: 3em;
   font-size: 14px;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
 }
 
 .left {
