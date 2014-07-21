@@ -1,0 +1,99 @@
+@import "bootstrap";
+
+$white: #FEFEFF;
+$blue: #327CCB;
+$dark: #161719;
+$logo-blue: #78818A;
+$smoke: #BCC3CA;
+
+$green: #38D138;
+
+html, body {
+  height: 100%;
+  background: $white;
+}
+
+.navbar, .panel-heading {
+  background: $dark !important;
+  color: $smoke !important;
+  border-radius: 0;
+  border: none;
+}
+
+.navbar-brand, .navbar-nav li a {
+  color: $smoke !important;
+}
+
+.navbar-nav li a:hover {
+  color: $white !important;
+}
+
+.notice {
+  float: left;
+  margin-top: 16px;
+  color: $green;
+  font-weight: bold;
+}
+
+.alert {
+  float: left;
+  color: red;
+  font-weight: bold;
+  padding: 0;
+  padding-top: 14px;
+}
+
+.twitter-login {
+  margin-top: -3px;
+  height: 23px;
+}
+
+#progress-dialog .modal-body {
+  text-align: center;
+
+  & h1 {
+    margin-bottom: 1.5em;
+  }
+}
+
+.welcome {
+  margin-top: 3em;
+  overflow: auto;
+}
+
+.big-logo  {
+  float: left;
+  margin-right: 3em;
+
+  & img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.intro-text {
+  margin-left: 3em;
+  width: 70%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.highlights-panel {
+  margin: 0 auto;
+  margin-top: 3em;
+  max-width: 700px;
+}
+
+#stop-stream-btn {
+  display: none;
+}
+
+#create-highlight-btn {
+  display: none;
+}
+
+.footer {
+  clear: both;
+  margin-top: 3em;
+  font-size: 14px;
+}

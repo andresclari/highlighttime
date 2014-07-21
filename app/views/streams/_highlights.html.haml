@@ -1,0 +1,20 @@
+#highlights-dialog(class="modal fade" tabindex="-1" role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button(class="close" data-dismiss="modal" area-hidden="true")
+          &times;
+        %h4(class="modal-title") Stream Highlights
+
+      .modal-body
+        .highlights-content
+          %table(class="table")
+            %thead
+              %tr
+                %th Start Time
+                %th Action
+            %tbody(id="highlights-table")
+
+      .modal-footer
+        %button(class="highlights-dialog-ok-btn btn btn-primary btn-sm")
+          OK

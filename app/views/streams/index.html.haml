@@ -1,0 +1,26 @@
+%div(class="panel panel-default highlights-panel")
+  .panel-heading Previous Streams
+  .panel-body
+    %p This is the list of all the streams you have tagged in the past.
+
+  %table(class="table")
+    %thead
+      %tr
+        %th Date
+        %th Highlights
+        %th Actions
+    %tbody
+      - @records.each do |record|
+        %tr
+          %th
+            = record.start_time.strftime('%m/%d/%Y - %l:%M %p')
+          %th
+            = record.highlights.count
+          %th
+            = hidden_field_tag 'stream_id', record.id
+            %button(class="view-stream-btn btn btn-primary btn-sm" data type="button")
+              View
+            %button(class="remove-stream-btn btn btn-danger btn-sm" data type="button")
+              Remove
+
+= render 'highlights'

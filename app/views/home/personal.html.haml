@@ -1,0 +1,17 @@
+%header
+  %center
+    %button(id="start-stream-btn" class="btn btn-primary" type="button") Start Stream
+    %button(id="stop-stream-btn" class="btn btn-danger" type="button") Stop Stream
+
+%div(class="panel panel-default highlights-panel")
+  .panel-heading Stream Highlights
+  .panel-body
+    %p This is the list of all the highlights you have tagged for the current stream.
+    %button(id="create-highlight-btn" class="btn btn-primary" type="button") Create Highlight
+
+  %table(class="table")
+    %thead
+      %tr
+        %th Start Time
+        %th Action
+    %tbody(id="highlights-table")
