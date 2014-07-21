@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 %html
-%head
-  %meta(charset="utf-8")
-  %title HighlightTime - Track streaming highlights
-  %meta(name="viewport" content="width=device-width, initial-scale=1")
-  %meta(name="description" content="Track your streams, from start to end, and mark highlights with one click.")
-  %meta(name="keywords" content="twitch,stream,highlight,tagger,tracker")
-  %meta(name="author" content="Andres Clari - SteelCode Consulting")
-  %link(rel="icon" type="image/png"  href="/favicon.png")
+  %head
+    %meta(charset="utf-8")
+    %title HighlightTime - Track streaming highlights
+    %meta(name="viewport" content="width=device-width, initial-scale=1")
+    %meta(name="description" content="Track your streams, from start to end, and mark highlights with one click.")
+    %meta(name="keywords" content="twitch,stream,highlight,tagger,tracker")
+    %meta(name="author" content="Andres Clari - SteelCode Consulting")
+    %link(rel="icon" type="image/png"  href="/favicon.png")
 
-  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
-  = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
 
-%body
-  .container
-    = render 'layouts/header'
+  %body
+    .container
+      = render 'layouts/header'
 
-    = yield
+      = yield
 
-    = render 'layouts/footer'
+      = render 'layouts/footer'
